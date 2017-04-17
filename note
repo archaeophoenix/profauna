@@ -1,0 +1,36 @@
+alamat OK
+excel OK
+validasi OK
+login OK
+log OK
+
+search
+
+login OK
+import OK
+biodata /area ,range reg
+
+export OK
+
+nomor list OK
+perpanjang / tidak OK
+
+staff bayaran (pkl) OK
+
+list bisa print OK
+
+autocomplete bug OK
+
+
+
+home menu kayak windows + organisasi
+
+
+SELECT COUNT(status), renewal FROM registrasi WHERE status = 'supporter' GROUP by renewal
+
+SELECT COUNT(status) FROM registrasi WHERE renewal IS NULL AND status = 'supporter'
+
+SELECT COUNT(registrasi.id), YEAR(tanggal), MONTH(tanggal) FROM registrasi WHERE registrasi.id = (SELECT registrasi.id FROM registrasi JOIN biodata ON id_bio = biodata.id ORDER BY registrasi.id DESC LIMIT 1) GROUP by YEAR(tanggal), MONTH(tanggal)
+
+
+no | kts | nama | email | agama | alamat | alamat | telpon | telpon | profesi | kelamin | tempat_lahir | tanggal_lahir | detail_profesi | tempat_profesi | status | tanggal | renewal | keterangan
